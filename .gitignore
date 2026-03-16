@@ -1,0 +1,12 @@
+# Firebase keys
+inventory/firebase_key.json
+
+# Variables de entorno
+inventory/.env
+
+# Entornos virtuales
+inventory/ven/
+
+# Python cache
+__pycache__/
+*.pyc
