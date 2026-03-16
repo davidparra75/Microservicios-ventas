@@ -14,11 +14,11 @@ class SalesController extends Controller
        // Consultar inventario en flask
        $inventory = Http::get("http://localhost:5000/products/$productId");
 
-       if (!$inventory -> succesful()){
+       if (!$inventory -> successful()){
         return response()->json(['error'=>'Error consultando inventario'],500);
        }
        
-       $stock = $inventory>json()['stock'];
+       $stock = $inventory->json()['stock'];
 
        // 2 verifica stock
        if ($stock < $quantity){
