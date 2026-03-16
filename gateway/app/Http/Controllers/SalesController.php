@@ -26,7 +26,7 @@ class SalesController extends Controller
        }
        
        //3 venta en express
-       $sale = Http::post("http://localhost:3000/sales",[
+       $sale = Http::post("http://localhost:3002/sales",[
            'product_id'=>$productId,
            'quantity'=>$quantity,
            'user_id'=>auth()->user()->id
