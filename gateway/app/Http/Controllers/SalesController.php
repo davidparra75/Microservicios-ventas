@@ -36,6 +36,6 @@ class SalesController extends Controller
         Http::put("http://localhost:5000/products/$productId",[
             'quantity'=>$quantity
         ]);
-        return response()->json($sale>json());
+        return response()->json($sale->json());
     }
 }
